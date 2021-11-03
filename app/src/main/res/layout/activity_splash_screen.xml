@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightYellow"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:background="@drawable/mon_chef"
+        android:layout_marginTop="70dp" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/icon"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="10K+ PREMIUM RECIPES"
+            android:textColor="#ff6f00"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="Recipes for"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/pt_sans"
+            android:text="Everyone"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

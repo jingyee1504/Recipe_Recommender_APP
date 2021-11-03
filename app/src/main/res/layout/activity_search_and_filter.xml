@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".SearchAndFilter">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightYellow"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/headerView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/tvSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:hint="What are you craving?"
+                    android:textColorHint="@color/colorPrimaryLight"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textSize="15dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/titleIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardSearch"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Search by Ingredient"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linearIngredient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleIngredients"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageButton
+                    android:id="@+id/imgIngredient"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/brocolli" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/butter" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/carrot" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearIngredient2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearIngredient"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageButton
+                    android:id="@+id/imgIngredient4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cheese" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/lemon" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient6"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/egg" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearIngredient3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearIngredient2"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageButton
+                    android:id="@+id/imgIngredient7"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/milk" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient8"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mushroom"/>
+
+                <ImageButton
+                    android:id="@+id/imgIngredient9"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rice" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearIngredient4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearIngredient3"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <ImageButton
+                    android:id="@+id/imgIngredient10"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/onion" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient11"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="-7dp"
+                    android:layout_marginRight="-7dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tomato" />
+
+                <ImageButton
+                    android:id="@+id/imgIngredient12"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/ic_background_circle"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/parsley" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/linearIngredient4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="70dp"
+                android:background="@drawable/button_shape"
+                android:text="Search with Ingredients"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/activity_bottom_navigation"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

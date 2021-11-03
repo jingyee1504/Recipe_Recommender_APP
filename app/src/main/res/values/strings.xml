@@ -1,0 +1,35 @@
+<resources>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="app_name">Food Recipes</string>
+    <string name="meal_categories">Meal Categories</string>
+    <string name="search_your_recipes">Search your recipes</string>
+    <string name="trending">Trending...</string>
+    <string name="loading">...</string>
+    <string name="label_category">Category</string>
+    <string name="label_country">Country</string>
+    <string name="label_instructions">INSTRUCTIONS</string>
+    <string name="label_Ingredients">INGREDIENTS</string>
+    <string name="label_Related_Recipes">RELATED RECIPES</string>
+    <string name="label_search_results">Search Results...</string>
+    <string name="label_cookbook_title">CookBook</string>
+    <string name="label_favourite_title">Favourite Recipes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="category">
+        <item>Beef</item>
+        <item>Chicken</item>
+        <item>Dessert</item>
+        <item>Fish</item>
+        <item>Pasta</item>
+        <item>Seafood</item>
+        <item>Sides</item>
+        <item>Sushi</item>
+        <item>Vegan</item>
+        <item>Noodles</item>
+        <item>Western</item>
+        <item>Broth</item>
+    </string-array>
+
+</resources>
